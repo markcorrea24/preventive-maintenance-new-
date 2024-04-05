@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="../pages/styles/menustyle.css">  
+    <link rel="stylesheet" href="../pages/styles/sched.css"/>
+</head>
+<body>
+
+    <!--End of navbar code-->
+    <div class="navbar" id="navbar">
+        <div class="navbar-title">ICT || Preventative Maintenance</div>
+        <ul class="navbar-menu" id="navbar-menu">
+            <li><a href="../pages/dashboard.html">Dashboard</a></li>
+            <li class="dropdown">
+                <a href="#">Inventory</a>
+                <div class="dropdown-content">
+                    <a href="../pages/equipments.html">IT Equipment</a>
+                    <a href="../pages/pullout.html">Pullout</a>
+                </div>
+            </li>
+            <li><a href="../pages/schedule.html">Schedule</a></li>
+            <li><a href="../pages/reports.html">Reports</a></li>
+            <li class="dropdown">
+                <a href="#">Department</a>
+                <div class="dropdown-content">
+                    <a href="../pages/academic.html">Academic</a>
+                    <a href="../pages/nonacad.html">Non-teaching</a>
+                </div>
+            </li>
+            <li><a href="../pages/users.html">Users</a></li>
+            <li class="logout-link"><a href="../pages/index.html">Logout</a></li>
+        </ul>
+    </div>
+    <!--End of navbar code-->
+
+    <div class="title">
+        <h1>SCHEDULE</h1>
+      </div>
+
+    <div class="container">
+        <h2>SCHEDULE OF</h2>
+        <h2>PREVENTIVE MAINTENANCE</h2>
+        <form id="schedule-form">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required><br><br>
+    
+          <label for="assigned-by">Assigned by:</label>
+          <input type="text" id="assigned-by" name="assigned-by" required><br><br>
+    
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" required><br><br>
+    
+          <label for="remarks">Remarks:</label>
+          <textarea id="remarks" name="remarks"></textarea><br><br>
+    
+          <label for="pc-printer">Number of Hardware (PC,Printer,etc.):</label>
+          <input type="number" id="pc-printer" name="pc-printer" required><br><br>
+    
+          <button type="submit">Submit</button>
+        </form>
+    
+        <div id="schedule-list">
+          <!-- Scheduled items will be displayed here -->
+        </div>
+      </div>
+    
+      <script src="sched.js"></script>
+
+
+</body>
+</html>
